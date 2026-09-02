@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Judul preview; tidak mengganti domain sumber Facebook. -->
+    <!-- Judul preview, bukan pengganti domain sumber di Facebook. -->
     <title>Nama Ayah — Dramaqu</title>
-    <meta name="description"
-          content="Tautan afiliasi Shopee dari Dramaqu.">
+    <meta name="description" content="">
+    <link rel="canonical" href="https://ghiwenk1.github.io/namaayah/">
 
-    <link rel="canonical"
-          href="https://ghiwenk1.github.io/namaayah/">
-
-    <!-- Metadata preview Facebook -->
+    <!-- Metadata yang dibaca crawler Facebook. -->
     <meta property="og:type" content="website">
-    <meta property="og:url"
-          content="https://ghiwenk1.github.io/namaayah/">
+    <meta property="og:url" content="https://ghiwenk1.github.io/namaayah/">
     <meta property="og:site_name" content="Dramaqu">
     <meta property="og:title" content="Nama Ayah — Dramaqu">
-    <meta property="og:description"
-          content="Tautan afiliasi Shopee dari Dramaqu.">
+    <meta property="og:description" content="">
     <meta property="og:locale" content="id_ID">
 
     <!--
-        Upload namaayah.jpg berukuran asli 1200 × 630 piksel.
+        WAJIB: unggah namaayah.jpg berukuran asli 1200 x 630 piksel.
+        Metadata tidak mengubah ukuran file gambar.
         ?v=3 membedakan URL gambar dari versi sebelumnya.
-        Setelah upload, lakukan Scrape Again.
+        Setelah upload, lakukan Scrape Again di Facebook Sharing Debugger.
     -->
     <meta property="og:image"
           content="https://ghiwenk1.github.io/namaayah/namaayah.jpg?v=3">
@@ -37,28 +33,22 @@
     <meta property="og:image:alt" content="Gambar kisah Nama Ayah">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
+        * { box-sizing: border-box; }
         html, body {
             margin: 0;
             padding: 0;
             background: #fff;
         }
-
         a {
             display: block;
             width: 100%;
             max-width: 720px;
             margin: 0 auto;
         }
-
         a:focus-visible {
             outline: 3px solid #ee4d2d;
             outline-offset: -3px;
         }
-
         img {
             display: block;
             width: 100%;
@@ -68,12 +58,11 @@
     </style>
 </head>
 <body>
-    <!-- Tetap bisa diklik ketika JavaScript dinonaktifkan. -->
+    <!-- Gambar tetap bisa diklik jika JavaScript diblokir. -->
     <a id="shopee-link"
        href="https://s.shopee.co.id/5q7qtfchR1"
        rel="sponsored"
        aria-label="Buka tautan afiliasi Shopee">
-
         <img src="namaayah.jpg?v=3"
              width="1200"
              height="630"
@@ -81,7 +70,6 @@
              fetchpriority="high">
     </a>
 
-    <!-- Pengalihan otomatis ke Shopee -->
     <script>
         const shopeeLink = document.getElementById("shopee-link");
         window.location.replace(shopeeLink.href);
