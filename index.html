@@ -3,54 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
 
-    <!--
-        PENGATURAN SEBELUM UPLOAD:
-        1. Alamat halaman sudah disesuaikan dengan GitHub Pages Anda.
-        2. Upload gambar bernama ISTRI PULANG.jpg di folder yang sama dengan index.html.
-        3. Metadata sudah disesuaikan agar dapat dibaca Facebook.
-        4. Periksa setelah upload melalui: https://developers.facebook.com/tools/debug/
-    -->
+    <!-- Judul wajib diisi agar objek Open Graph valid di Facebook. -->
+    <title>Nama Ayah</title>
+    <link rel="canonical" href="https://ghiwenk1.github.io/namaayah/">
+
+    <!-- Metadata yang dibaca crawler Facebook. -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ghiwenk1.github.io/namaayah/">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    
-    <!-- Penyesuaian nama file tetap menggunakan spasi -->
-    <meta property="og:image" content="https://ghiwenk1.github.io/namaayah/namaayah.jpg">
+    <meta property="og:site_name" content="Dramaqu">
+    <meta property="og:title" content="Nama Ayah">
+    <meta property="og:description" content="Lihat kisah selengkapnya.">
     <meta property="og:locale" content="id_ID">
+
+    <!--
+        ?v=2 memaksa Facebook mengambil versi gambar baru.
+        Naikkan menjadi ?v=3 jika gambar diganti lagi dengan nama yang sama.
+    -->
+    <meta property="og:image"
+          content="https://ghiwenk1.github.io/namaayah/namaayah.jpg?v=2">
+    <meta property="og:image:secure_url"
+          content="https://ghiwenk1.github.io/namaayah/namaayah.jpg?v=2">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="276">
+    <meta property="og:image:height" content="488">
+    <meta property="og:image:alt" content="Gambar kisah Nama Ayah">
 
     <style>
         * { box-sizing: border-box; }
-        html, body { margin: 0; padding: 0; background: #fff; }
-        a { display: block; width: 100%; max-width: 720px; margin: 0 auto; }
-        a:focus-visible { outline: 3px solid #ee4d2d; outline-offset: -3px; }
-        
-        /* PERUBAHAN RASIO 9:16 ADA DI SINI */
-        img { 
-            display: block; 
-            width: 100%; 
-            height: auto; 
-            aspect-ratio: 9 / 16; /* Memaksa tampilan menjadi rasio vertikal 9:16 */
-            object-fit: cover; /* Memastikan gambar memenuhi area tanpa merusak proporsi (tidak gepeng) */
-            border: 0; 
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        a {
+            display: block;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        a:focus-visible {
+            outline: 3px solid #ee4d2d;
+            outline-offset: -3px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Hanya gambar; tetap bisa diklik ketika JavaScript dinonaktifkan. -->
+    <!-- Gambar tetap bisa diklik jika JavaScript diblokir. -->
     <a id="shopee-link"
        href="https://s.shopee.co.id/5q7qtfchR1"
        rel="sponsored"
        aria-label="Buka tautan afiliasi Shopee">
-        <!-- Penyesuaian nama file gambar di dalam body tetap menggunakan spasi -->
-        <img src="namaayah.jpg" alt="" fetchpriority="high">
+        <img src="namaayah.jpg"
+             width="276"
+             height="488"
+             alt="Gambar kisah Nama Ayah"
+             fetchpriority="high">
     </a>
 
-    <!-- Pertahankan pengalihan otomatis ke link Shopee dari file asli. -->
     <script>
-        window.location.replace(document.getElementById("shopee-link").href);
+        const shopeeLink = document.getElementById("shopee-link");
+        window.location.replace(shopeeLink.href);
     </script>
 </body>
 </html>
